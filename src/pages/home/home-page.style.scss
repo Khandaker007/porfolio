@@ -1,0 +1,73 @@
+@import '../../sass/variables.scss';
+
+.home-page{
+
+    font-size: 2rem;
+    font-weight: 400;
+    color: green;
+
+    display: grid;
+    grid-template-rows: 90vh 25vw 30vw 25vw min-content 30vw 25vw 40vw repeat(2, min-content);
+    grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(14rem, 1fr) [col-end] ) [center-end] 1fr [full-end];
+}
+
+.hero{
+    background-color: $color-primary;
+    grid-column: full-start / full-end;
+}
+.cv-content{
+    background-color: $color-blue;
+    grid-column: full-start / col-start 5;
+}
+.cv-download{
+    background-color: $color-gold;
+    grid-column: col-start 5 / full-end;
+}
+.philosophy-content{
+    background-color: $color-green;
+    grid-column: full-start / col-start 5;
+}
+.philosophy-image{
+    background-color: $color-grey-light-2;
+    grid-column: col-start 5 / full-end;
+}
+.skills-content{
+    background-color: $color-grey-light-3;
+    grid-column: full-start / col-start 5;
+}
+.skills-bar{
+    background-color: $color-red;
+    grid-column: col-start 5 / full-end;
+}
+.my-work{
+    background-color: $color-secondary;
+    grid-column: center-start / center-end;
+}
+.github-content{
+    background-color: $color-violet;
+    grid-column: full-start / col-start 5;
+}
+.github-image{
+    background-color: $color-grey-light-1;
+    grid-column: col-start 5 / full-end;
+}
+.upwork-content{
+    background-color: $color-primary;
+    grid-column: full-start / full-end;
+}
+.upwork-image{
+    background-color: $color-secondary;
+    grid-column: full-start / full-end;
+}
+.contact-content{
+    background-color: $color-spanish-white;
+    grid-column: full-start / col-start 5;
+}
+.contact-form{
+    background-color: $color-primary-light;
+    grid-column: col-start 5 / full-end;
+}
+.footer{
+    background-color: $color-grey-light-2;
+    grid-column: full-start / full-end;
+}
