@@ -2,9 +2,10 @@
 
 .home-page{
 
-    font-size: 2rem;
-    font-weight: 400;
+    // font-size: 2rem;
+    // font-weight: 400;
     color: green;
+    background-color: $color-primary;
 
     display: grid;
     grid-template-rows: 90vh 25vw 30vw 25vw min-content 30vw 25vw 40vw repeat(2, min-content);
@@ -12,8 +13,30 @@
 }
 
 .hero{
-    background-color: $color-primary;
-    grid-column: full-start / full-end;
+    // background-color: $color-primary;
+    grid-column: center-start / full-end;
+    
+    padding: 0 5rem;
+    background-image: linear-gradient(90deg,
+                                      rgba($color-primary-light, 0) 25%,
+                                      $color-primary-light 25%);
+    
+    display: flex;
+    align-items: center;
+
+    &__img-container{
+        height: 35rem;
+        width: 51.5rem;
+        background-color: $color-grey-light-3;
+    }
+    &__img{
+        height: 100%;
+        width: 50%;
+    }
+
+    &__content{
+        margin-left: -5.5rem;
+    }
 }
 .cv-content{
     background-color: $color-blue;

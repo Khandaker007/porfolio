@@ -1,0 +1,30 @@
+@import '../sass/variables.scss';
+
+%heading{
+    font-weight: 400;
+}
+
+.heading-1{
+    @extend %heading;
+    font-size: 5rem;
+    color: $color-grey-light-1;
+    line-height: 1;
+}
+.heading-2{
+    @extend %heading;
+    color: $color-grey-light-1;
+    font-size: 4rem;
+    line-height: 1;
+    font-style: italic
+}
+.heading-3{
+    @extend %heading;
+    color: $color-grey-light-1;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+.text{
+    font-size: 1.3rem;
+    color: $color-grey-light-2;
+}
