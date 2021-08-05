@@ -1,5 +1,8 @@
 import React from 'react'
 
+// COMPONENTS
+import CustomButton from '../../components/custom-button/custom-button.component'
+
 // IMAGE
 import myPhoto from '../../asset/image/Khandaker.jpg'
 
@@ -20,10 +23,17 @@ const HomePage = () => (
             </div>
         </section>
         <div className="cv-content">
-            cv content
+            <div className="heading-2">
+                <span className='heading'>Front-end Web</span>
+                <span className='heading'>Development</span>
+            </div>
+            <p className="text">Front-end web development is the development of the graphical <br/>user interface of a website, through the use of HTML, CSS, and JavaScript, <br/>so that users can view and interact with that website.</p>
         </div>
         <div className="cv-download">
-            cv download
+            <hr className='horizontal-line' />
+            <div className="button-container">
+                <CustomButton text='Download CV'/>
+            </div>
         </div>
         <div className="philosophy-content">
             philosophy content

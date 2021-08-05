@@ -1,0 +1,21 @@
+@import '../../sass/variables.scss';
+
+.custom-button{
+}
+.btn{
+    font-size: 1.6rem;
+    padding: 2rem 6rem;
+    background-color: $color-secondary;
+    color: $color-grey-light-1;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 2px solid $color-secondary;
+    transition: all .2s;
+}
+
+.btn:hover,
+.btn:focus{
+    color: $color-secondary;
+    background-color: $color-grey-light-1;
+}

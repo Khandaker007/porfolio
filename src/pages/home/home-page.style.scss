@@ -39,12 +39,37 @@
     }
 }
 .cv-content{
-    background-color: $color-blue;
-    grid-column: full-start / col-start 5;
+    // background-color: $color-blue;
+    grid-column: center-start / col-start 5;
+    margin-left: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+
+    .heading{
+        display: block;
+    }
 }
 .cv-download{
-    background-color: $color-gold;
+    // background-color: $color-gold;
     grid-column: col-start 5 / full-end;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .button-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .horizontal-line{
+        height: 1rem;
+        border: none;
+        background-color: $color-gold;
+    }
 }
 .philosophy-content{
     background-color: $color-green;
