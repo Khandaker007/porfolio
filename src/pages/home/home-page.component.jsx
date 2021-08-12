@@ -5,6 +5,7 @@ import CustomButton from '../../components/custom-button/custom-button.component
 
 // IMAGE
 import myPhoto from '../../asset/image/Khandaker.jpg'
+import phylosophyImage from '../../asset/image/phylosophy.jpg'
 
 import './home-page.style.scss'
 import '../../sass/typography.scss'
@@ -27,19 +28,21 @@ const HomePage = () => (
                 <span className='heading'>Front-end Web</span>
                 <span className='heading'>Development</span>
             </div>
-            <p className="text">Front-end web development is the development of the graphical <br/>user interface of a website, through the use of HTML, CSS, and JavaScript, <br/>so that users can view and interact with that website.</p>
+            <p className="text">Front-end web development is the development of the graphical user interface of a website, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that website.</p>
         </div>
         <div className="cv-download">
-            <hr className='horizontal-line' />
+            {/* <hr className='horizontal-line' /> */}
             <div className="button-container">
-                <CustomButton text='Download CV'/>
+                <CustomButton text='download CV'/>
             </div>
         </div>
         <div className="philosophy-content">
-            philosophy content
+            <h1 className="heading-1">Philosophy & values</h1>
+            <p className="text">I think everyone wants the same thing - relationship with <br/> humanity, peace with metaphysical, and experience with the <br /> universe. I try to group these things with my values, authenticity, <br /> creativity, & hospitality.</p>
+            <a href='#' className="philosophy-content__about-link">More about me</a>
         </div>
         <div className="philosophy-image">
-            philosophy image
+            <img className='image' src={phylosophyImage} alt="phylosophy image" />
         </div>
         <div className="skills-content">
             skill content

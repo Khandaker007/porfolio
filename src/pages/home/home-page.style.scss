@@ -4,8 +4,8 @@
 
     // font-size: 2rem;
     // font-weight: 400;
-    color: green;
-    background-color: $color-primary;
+    // color: green;
+    // background-color: $color-primary;
 
     display: grid;
     grid-template-rows: 90vh 25vw 30vw 25vw min-content 30vw 25vw 40vw repeat(2, min-content);
@@ -14,10 +14,11 @@
 
 .hero{
     // background-color: $color-primary;
-    grid-column: center-start / full-end;
+    grid-column: full-start / full-end;
     
-    padding: 0 5rem;
+    padding: 10rem;
     background-image: linear-gradient(90deg,
+                                      rgba($color-primary, 1), 25%,
                                       rgba($color-primary-light, 0) 25%,
                                       $color-primary-light 25%);
     
@@ -39,14 +40,15 @@
     }
 }
 .cv-content{
-    // background-color: $color-blue;
-    grid-column: center-start / col-start 5;
-    margin-left: 5rem;
+    background-color: $color-primary;
+    grid-column: full-start / col-start 5;
+    padding: 10rem;
+    // border: none;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5rem;
+    gap: 2rem;
 
     .heading{
         display: block;
@@ -54,31 +56,62 @@
     }
 }
 .cv-download{
-    // background-color: $color-gold;
+    background-color: $color-primary;
     grid-column: col-start 5 / full-end;
 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding: 10rem 0;
 
     .button-container{
         display: flex;
         justify-content: center;
     }
 
-    .horizontal-line{
-        height: 1rem;
-        border: none;
-        background-color: $color-gold;
-    }
+    // .horizontal-line{
+    //     height: 1rem;
+    //     border: none;
+    //     background-color: $color-gold;
+    // }
 }
 .philosophy-content{
-    background-color: $color-green;
+    background-color: $color-spanish-white;
     grid-column: full-start / col-start 5;
+
+    padding: 10rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    
+
+    &__about-link{
+        color: black;
+        font-size: 1.6rem;
+        text-decoration: none;
+        border-bottom: 1px solid black;
+        margin-right: auto;
+        
+    }
+
+    .heading-1{
+        color: black !important;
+    }
+    .text{
+        color: black !important;
+    }
 }
 .philosophy-image{
     background-color: $color-grey-light-2;
     grid-column: col-start 5 / full-end;
+
+    background-position: center;
+
+    .image{
+        width: 100%;        
+    }
 }
 .skills-content{
     background-color: $color-grey-light-3;
