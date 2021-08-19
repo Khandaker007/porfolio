@@ -1,0 +1,22 @@
+.progress{
+    background-color: white;
+    height: 1rem;
+    border-radius: 1rem;
+}
+
+.progress-bar{
+    height: 1rem;
+    width: 80%;
+    border-radius: 1rem;
+    padding: 0 .5rem;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    
+}
+span{
+    color: black;
+    font-weight: 600;
+}

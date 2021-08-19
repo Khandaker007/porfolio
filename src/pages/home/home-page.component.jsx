@@ -2,6 +2,7 @@ import React from 'react'
 
 // COMPONENTS
 import CustomButton from '../../components/custom-button/custom-button.component'
+import SkillBar from '../../components/skill-bar/skill-bar.component'
 
 // IMAGE
 import myPhoto from '../../asset/image/Khandaker.jpg'
@@ -45,10 +46,14 @@ const HomePage = () => (
             <img className='image' src={phylosophyImage} alt="phylosophy image" />
         </div>
         <div className="skills-content">
-            skill content
+            <h1 className="heading-1">Skillset.</h1>
+            <p className="text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.</p>
         </div>
         <div className="skills-bar">
-            skills bar
+            <SkillBar type='HTML' percentage={90} color='#3CC74B' />
+            <SkillBar type='CSS' percentage={80} color='#AC233F'/>
+            <SkillBar type='JavaScript' percentage={70} color='#F4C917'/>
+            <SkillBar type='ReactJs' percentage={60} color='#39B4F8'/>
         </div>
         <section className='my-work'>
             my work
