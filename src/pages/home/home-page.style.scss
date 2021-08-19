@@ -8,7 +8,7 @@
     // background-color: $color-primary;
 
     display: grid;
-    grid-template-rows: 90vh 25vw 30vw min-content min-content 30vw 25vw 40vw repeat(2, min-content);
+    grid-template-rows: 90vh min-content 35vw min-content min-content 30vw 25vw 40vw repeat(2, min-content);
     grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(14rem, 1fr) [col-end] ) [center-end] 1fr [full-end];
 }
 
@@ -108,9 +108,10 @@
     grid-column: col-start 5 / full-end;
 
     background-position: center;
+    background-size: cover;
 
     .image{
-        width: 100%;        
+        height: 100%;       
     }
 }
 .skills-content{

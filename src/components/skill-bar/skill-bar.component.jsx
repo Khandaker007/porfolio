@@ -17,7 +17,7 @@ const SkillBar = ({type, percentage,color}) => (
                          justifyContent: 'flex-end',
                          alignItems: 'center'
                         }} >
-                <span>{percentage}%</span>
+                <span className='percentage'>{percentage}%</span>
             </div>
         </div>
 
